@@ -10,4 +10,8 @@ defmodule FixtureElixir.CalcTest do
   test "multiplies" do
     assert Calc.multiply(4, 3) == 12
   end
+
+  test "divides" do
+    assert Calc.divide(10, 2) == 5.0
+  end
 end
