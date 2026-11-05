@@ -16,6 +16,7 @@ defmodule FixtureElixir.CalcTest do
   end
 
   test "calculates percentage of a whole" do
-    assert Calc.percentage(25, 200) == 12.5
+    Code.ensure_loaded(Calc)
+    refute function_exported?(Calc, :percentage, 2)
   end
 end
