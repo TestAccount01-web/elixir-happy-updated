@@ -14,4 +14,8 @@ defmodule FixtureElixir.CalcTest do
   test "subtracts" do
     assert Calc.subtract(10, 4) == 6
   end
+
+  test "calculates percentage of a whole" do
+    assert Calc.percentage(25, 200) == 12.5
+  end
 end
