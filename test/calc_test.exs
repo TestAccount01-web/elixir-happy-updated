@@ -10,4 +10,8 @@ defmodule FixtureElixir.CalcTest do
   test "multiplies" do
     assert Calc.multiply(4, 3) == 12
   end
+
+  test "subtracts" do
+    assert Calc.subtract(10, 4) == 6
+  end
 end
